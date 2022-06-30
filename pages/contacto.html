@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Lajas padel</title>
+    <link href="../iconos/Logo.png" rel="icon">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nuosu+SIL&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1078e01a8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Contenedor global-->
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <div class="logo">
+                <a href="#"> <img class="img-logo" src="../imagenes/Logo.png" alt="Las Lajas padel"> </a> 
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/Nuestras canchas.html">Nuestras canchas</a></li>
+                    <li><a href="../pages/Nosostros.html">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!--Section-->
+        <section class="section">  
+            <article class="contactanos">
+                <h2 class="titulo-contacto">CONTACTANOS</h2>
+            </article>
+
+            <article>
+                <form class="formulario" id="formulario" action="">
+                    <label for="nombre" class="espacio">Nombre: <input type="text" id="nombre" class="formulario_input" required></label>
+
+                    <div class="formulario_telefono espacio" id="form_telefono">
+                        <div class="form_tel" >
+                            <label for="telefono">Teléfono: <input type="text" id="telefono" class="formulario_input" required></label>
+                            <i class="fa-solid fa-circle-xmark icono_error"></i>
+                        </div>
+                        <p class="telefono_error">El teléfono solo puede contener números y un máximo de 14 dígitos</p>
+                    </div>
+
+                    <label for="email" class="espacio">Email: <input type="email" id="email" class="formulario_input" required></label>
+                    
+
+                    <label for="mensaje" class="espacio"> Mensaje: <textarea id="mensaje" cols="50" rows="5" class="formulario_textarea" required></textarea></label>
+
+                    <div class="formulario_mensaje espacio" id="formulario_mensaje">
+                        <p> <i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor complete los datos requeridos</p>
+                    </div>
+
+                    <div class="formulario_boton espacio">
+                        <button type="submit" class="boton">Enviar</button>
+                        <p class="formulario_enviado">El mensaje fue enviado exitosamente!</p>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <p>CONTACTO:</p>
+            <address class="facebook">
+                <img class="iconFooter" src="../iconos/logofacebook.png" alt="logofacebook">
+                <p> Facebook: <a  class="facebook" href="https://www.facebook.com/Las-Lajas-Padel-1584964235107271/">Las lajas padel</a> </p>
+            </address>
+
+            <div class="Reservas">
+                <img class="iconFooter" src="../iconos/telefono.png" alt="telefono">
+                <p>Reservas: 03794439153</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../js/app.js"></script>
+
+</body>
+</html>
